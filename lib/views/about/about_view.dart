@@ -1,5 +1,6 @@
 library about_view;
 
+import 'package:go_router/go_router.dart';
 import 'package:herbal/core/constants/constants.dart';
 import 'package:herbal/theme/theme.dart';
 import 'package:herbal/widgets/about/about_widget.dart';

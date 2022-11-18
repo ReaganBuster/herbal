@@ -59,12 +59,40 @@ class _AboutMobile extends StatelessWidget {
           children: [
             DrawerHeader(
               child: SizedBox(
-                width: 42,
-                height: 42,
+                width: 80,
+                height: 80,
                 child: Image.asset(
                   logo,
                 ),
               ),
+            ),
+            ListTile(
+              title: Text('Home'),
+              textColor: Colors.redAccent,
+              onTap: () {
+                GoRouter.of(context).go('/');
+              },
+            ),
+            ListTile(
+              title: Text('Blog'),
+              textColor: Colors.redAccent,
+              onTap: () {
+                GoRouter.of(context).go('blog');
+              },
+            ),
+            ListTile(
+              title: Text('About'),
+              textColor: Colors.blueGrey,
+              onTap: () {
+                GoRouter.of(context).go('about');
+              },
+            ),
+            ListTile(
+              title: Text('Contact'),
+              textColor: Colors.redAccent,
+              onTap: () {
+                GoRouter.of(context).go('contact');
+              },
             )
           ],
         ),

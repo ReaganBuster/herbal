@@ -17,7 +17,9 @@ class _HeroMobile extends StatelessWidget {
             ),
             children: [
               Image.asset(
-                bannerImage,
+                asset5,
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height - kToolbarHeight,
                 key: _backgroundImageKey,
                 fit: BoxFit.cover,
               ),
@@ -27,12 +29,12 @@ class _HeroMobile extends StatelessWidget {
             color: Color.fromARGB(79, 0, 0, 0),
           ),
           Padding(
-            padding: const EdgeInsets.all(50.0),
+            padding: const EdgeInsets.all(15.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(
-                  width: MediaQuery.of(context).size.width * 0.5,
+                  width: MediaQuery.of(context).size.width * 0.8,
                   child: Wrap(
                     children: [
                       SelectableText(
@@ -49,7 +51,7 @@ class _HeroMobile extends StatelessWidget {
                   height: 20,
                 ),
                 SizedBox(
-                  width: MediaQuery.of(context).size.width * 0.5,
+                  width: MediaQuery.of(context).size.width * 0.8,
                   child: Wrap(
                     children: [
                       SelectableText(
@@ -65,7 +67,7 @@ class _HeroMobile extends StatelessWidget {
                   height: 30,
                 ),
                 SizedBox(
-                  width: MediaQuery.of(context).size.width * 0.5,
+                  width: MediaQuery.of(context).size.width * 0.8,
                   child: Row(
                     children: [
                       MaterialButton(

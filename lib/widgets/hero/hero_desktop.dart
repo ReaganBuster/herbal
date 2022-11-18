@@ -20,7 +20,7 @@ class _HeroDesktop extends StatelessWidget {
             ),
             children: [
               Image.asset(
-                bannerImage,
+                asset5,
                 key: _backgroundImageKey,
                 fit: BoxFit.cover,
               ),
