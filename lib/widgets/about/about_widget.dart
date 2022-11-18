@@ -10,6 +10,8 @@ part 'about_tablet.dart';
 part 'about_desktop.dart';
 
 class AboutWidget extends StatelessWidget {
+  const AboutWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
