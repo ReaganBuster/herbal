@@ -1,5 +1,6 @@
 library home_view;
 
+import 'package:herbal/widgets/about/about_widget.dart';
 import 'package:herbal/widgets/banner/banner_widget.dart';
 import 'package:herbal/widgets/footer/footer_widget.dart';
 import 'package:herbal/widgets/hero/hero_widget.dart';

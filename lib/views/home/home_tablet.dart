@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors_in_immutables, prefer_const_constructors
+
 part of home_view;
 
 class _HomeTablet extends StatelessWidget {
@@ -8,29 +10,22 @@ class _HomeTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Tablet'),
-        backgroundColor: Colors.indigo,
-      ),
-      body: Center(
+      body: SingleChildScrollView(
+        // controller: controller,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times: ',
-              style: TextStyle(fontSize: 14),
+          children: [
+            BannerWidget(
+              homeColor: Colors.blueGrey,
+              aboutColor: Colors.redAccent,
+              blogColor: Colors.redAccent,
+              contactColor: Colors.redAccent,
             ),
-            Text(
-              '${viewModel.counter}',
-              style: Theme.of(context).textTheme.displaySmall,
-            ),
+            HeroWidget(),
+            AboutWidget(),
+            ServicesWidget(),
+            FooterWidget()
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
-        onPressed: viewModel.increment,
-        backgroundColor: Colors.indigo,
       ),
     );
   }

@@ -8,7 +8,21 @@ class _AboutDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text('AboutDesktop')),
+      body: SingleChildScrollView(
+        // controller: controller,
+        child: Column(
+          children: [
+            BannerWidget(
+              homeColor: Colors.redAccent,
+              aboutColor: Colors.blueGrey,
+              blogColor: Colors.redAccent,
+              contactColor: Colors.redAccent,
+            ),
+            AboutWidget(),
+            FooterWidget()
+          ],
+        ),
+      ),
     );
   }
 }

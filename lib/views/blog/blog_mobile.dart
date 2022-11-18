@@ -8,7 +8,20 @@ class _BlogMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text('BlogMobile')),
+      body: SingleChildScrollView(
+        // controller: controller,
+        child: Column(
+          children: [
+            BannerWidget(
+              homeColor: Colors.redAccent,
+              aboutColor: Colors.redAccent,
+              blogColor: Colors.blueGrey,
+              contactColor: Colors.redAccent,
+            ),
+            FooterWidget()
+          ],
+        ),
+      ),
     );
   }
 }

@@ -7,6 +7,24 @@ class _HomeMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return _HomeDesktop(viewModel);
+    return Scaffold(
+      body: SingleChildScrollView(
+        // controller: controller,
+        child: Column(
+          children: [
+            BannerWidget(
+              homeColor: Colors.blueGrey,
+              aboutColor: Colors.redAccent,
+              blogColor: Colors.redAccent,
+              contactColor: Colors.redAccent,
+            ),
+            HeroWidget(),
+            AboutWidget(),
+            ServicesWidget(),
+            FooterWidget()
+          ],
+        ),
+      ),
+    );
   }
 }

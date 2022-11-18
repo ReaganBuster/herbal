@@ -1,5 +1,11 @@
 library about_view;
 
+import 'package:herbal/core/constants/constants.dart';
+import 'package:herbal/theme/theme.dart';
+import 'package:herbal/widgets/about/about_widget.dart';
+import 'package:herbal/widgets/banner/banner_widget.dart';
+import 'package:herbal/widgets/footer/footer_widget.dart';
+import 'package:herbal/widgets/services/services_widget.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';

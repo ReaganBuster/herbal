@@ -14,8 +14,14 @@ class _HomeDesktop extends StatelessWidget {
         // controller: controller,
         child: Column(
           children: [
-            BannerWidget(),
+            BannerWidget(
+              homeColor: Colors.blueGrey,
+              aboutColor: Colors.redAccent,
+              blogColor: Colors.redAccent,
+              contactColor: Colors.redAccent,
+            ),
             HeroWidget(),
+            AboutWidget(),
             ServicesWidget(),
             FooterWidget()
           ],

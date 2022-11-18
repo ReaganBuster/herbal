@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 part of footer_widget;
 
 class _FooterDesktop extends StatelessWidget {
@@ -23,6 +25,7 @@ class _FooterDesktop extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Expanded(
+                      flex: 4,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -38,26 +41,31 @@ class _FooterDesktop extends StatelessWidget {
                               SizedBox(
                                 width: 5,
                               ),
-                              Text(
-                                'Herbal',
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 32),
-                              )
+                              Wrap(
+                                children: [
+                                  Text(
+                                    'Nutracelitical World Limited',
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 28),
+                                  ),
+                                ],
+                              ),
                             ],
                           ),
-                          SizedBox(height: 15),
+                          SizedBox(height: 10),
                           Wrap(
                             children: const [
                               SelectableText(
-                                  'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
+                                  'Building a leading and focused herbal medicine company powered by advanced therapy platforms and data science is our over arching strategy.',
                                   style: TextStyle(
+                                    height: 2,
                                     color: Colors.white,
                                   ))
                             ],
                           ),
-                          SizedBox(height: 15),
+                          SizedBox(height: 10),
                           Row(
                             children: [
                               IconButton(
@@ -89,76 +97,14 @@ class _FooterDesktop extends StatelessWidget {
                         ],
                       ),
                     ),
+                    Spacer(),
                     Expanded(
-                      flex: 1,
+                      flex: 3,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                'Quick links',
-                                style: TextStyle(
-                                    color: Colors.blueGrey,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20),
-                              ),
-                            ],
-                          ),
-                          Padding(
-                            padding:
-                                const EdgeInsets.only(top: 8.0, bottom: 8.0),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                TextButton(
-                                  onPressed: () {},
-                                  child: Text('Home',
-                                      style: TextStyle(color: Colors.white)),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Padding(
-                            padding:
-                                const EdgeInsets.only(top: 8.0, bottom: 8.0),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                TextButton(
-                                  onPressed: () {},
-                                  child: Text('About',
-                                      style: TextStyle(color: Colors.white)),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Padding(
-                            padding:
-                                const EdgeInsets.only(top: 8.0, bottom: 8.0),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                TextButton(
-                                  onPressed: () {},
-                                  child: Text('Contact',
-                                      style: TextStyle(color: Colors.white)),
-                                ),
-                              ],
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                    Expanded(
-                      flex: 1,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
                                 'Contact Info',
@@ -173,14 +119,14 @@ class _FooterDesktop extends StatelessWidget {
                             padding:
                                 const EdgeInsets.only(top: 8.0, bottom: 8.0),
                             child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Icon(Icons.location_pin,
                                     color: Colors.blueGrey),
                                 SizedBox(
                                   width: 10,
                                 ),
-                                SelectableText('Kampala District, Bwaise',
+                                SelectableText(
+                                    'Kyakataragyi, Rusoroza, Kihihi Kanungu Uganda',
                                     style: TextStyle(color: Colors.white))
                               ],
                             ),
@@ -189,7 +135,6 @@ class _FooterDesktop extends StatelessWidget {
                             padding:
                                 const EdgeInsets.only(top: 8.0, bottom: 8.0),
                             child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Icon(Icons.phone, color: Colors.blueGrey),
                                 SizedBox(
@@ -204,7 +149,6 @@ class _FooterDesktop extends StatelessWidget {
                             padding:
                                 const EdgeInsets.only(top: 8.0, bottom: 8.0),
                             child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Icon(
                                   Icons.mail,
@@ -220,7 +164,67 @@ class _FooterDesktop extends StatelessWidget {
                           )
                         ],
                       ),
-                    )
+                    ),
+                    Spacer(),
+                    Expanded(
+                      flex: 1,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                'Quick links',
+                                style: TextStyle(
+                                    color: Colors.blueGrey,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20),
+                              ),
+                            ],
+                          ),
+                          Padding(
+                            padding:
+                                const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                            child: Row(
+                              children: [
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text('Home',
+                                      style: TextStyle(color: Colors.white)),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding:
+                                const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                            child: Row(
+                              children: [
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text('About',
+                                      style: TextStyle(color: Colors.white)),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding:
+                                const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                            child: Row(
+                              children: [
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text('Contact',
+                                      style: TextStyle(color: Colors.white)),
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
                   ]),
             )),
       ],

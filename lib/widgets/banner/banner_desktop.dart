@@ -1,6 +1,20 @@
+// ignore_for_file: prefer_const_constructors
+
 part of banner_widget;
 
 class _BannerDesktop extends StatelessWidget {
+  Color homeColor;
+  Color blogColor;
+  Color aboutColor;
+  Color contactColor;
+  _BannerDesktop({
+    Key? key,
+    required this.homeColor,
+    required this.blogColor,
+    required this.aboutColor,
+    required this.contactColor,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -72,7 +86,7 @@ class _BannerDesktop extends StatelessWidget {
                         width: 5,
                       ),
                       Text(
-                        'Herbal',
+                        'Nutracelitical World Limited',
                         style: TextStyle(
                             color: Colors.redAccent,
                             fontWeight: FontWeight.bold,
@@ -88,38 +102,46 @@ class _BannerDesktop extends StatelessWidget {
                     Padding(
                         padding: EdgeInsets.only(left: 8.0, right: 8.0),
                         child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            GoRouter.of(context).go('/');
+                          },
                           child: Text(
                             'Home',
-                            style: TextStyle(color: Colors.blueGrey),
+                            style: TextStyle(color: homeColor),
                           ),
                         )),
                     Padding(
                       padding: EdgeInsets.only(left: 8.0, right: 8.0),
                       child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            GoRouter.of(context).go('/blog');
+                          },
                           child: Text(
                             'Blog',
-                            style: TextStyle(color: Colors.redAccent),
+                            style: TextStyle(color: blogColor),
                           )),
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 8.0, right: 8.0),
                       child: TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          GoRouter.of(context).go('/about');
+                        },
                         child: Text(
                           'About',
-                          style: TextStyle(color: Colors.redAccent),
+                          style: TextStyle(color: aboutColor),
                         ),
                       ),
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 8.0, right: 8.0),
                       child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            GoRouter.of(context).go('/contact');
+                          },
                           child: Text(
                             'Contact',
-                            style: TextStyle(color: Colors.redAccent),
+                            style: TextStyle(color: aboutColor),
                           )),
                     )
                   ],

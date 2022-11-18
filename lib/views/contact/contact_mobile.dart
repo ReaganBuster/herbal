@@ -8,7 +8,20 @@ class _ContactMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text('ContactMobile')),
+      body: SingleChildScrollView(
+        // controller: controller,
+        child: Column(
+          children: [
+            BannerWidget(
+              homeColor: Colors.redAccent,
+              aboutColor: Colors.redAccent,
+              blogColor: Colors.redAccent,
+              contactColor: Colors.blueGrey,
+            ),
+            FooterWidget()
+          ],
+        ),
+      ),
     );
   }
 }

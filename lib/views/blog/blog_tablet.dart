@@ -8,7 +8,20 @@ class _BlogTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text('BlogTablet')),
+      body: SingleChildScrollView(
+        // controller: controller,
+        child: Column(
+          children: [
+            BannerWidget(
+              homeColor: Colors.redAccent,
+              aboutColor: Colors.redAccent,
+              blogColor: Colors.blueGrey,
+              contactColor: Colors.redAccent,
+            ),
+            FooterWidget()
+          ],
+        ),
+      ),
     );
   }
 }

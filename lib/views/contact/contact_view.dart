@@ -1,5 +1,7 @@
 library contact_view;
 
+import 'package:herbal/widgets/banner/banner_widget.dart';
+import 'package:herbal/widgets/footer/footer_widget.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
