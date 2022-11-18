@@ -9,6 +9,8 @@ part 'footer_tablet.dart';
 part 'footer_desktop.dart';
 
 class FooterWidget extends StatelessWidget {
+  const FooterWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(

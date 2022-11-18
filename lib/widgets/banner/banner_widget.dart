@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 library banner_widget;
 
 import 'package:go_router/go_router.dart';
