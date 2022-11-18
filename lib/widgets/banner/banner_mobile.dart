@@ -21,7 +21,7 @@ class _BannerMobile extends StatelessWidget {
         Container(
           color: Colors.redAccent,
           child: Padding(
-            padding: const EdgeInsets.only(left: 40.0, right: 40),
+            padding: const EdgeInsets.only(left: 15.0, right: 15),
             child: Row(
               children: [
                 Expanded(

@@ -13,7 +13,7 @@ class _AboutMobile extends StatelessWidget {
           Expanded(
               flex: 2,
               child: Padding(
-                padding: const EdgeInsets.all(50.0),
+                padding: const EdgeInsets.all(25.0),
                 child: StaggeredGrid.count(
                   crossAxisCount: 4,
                   mainAxisSpacing: 4,
@@ -61,6 +61,7 @@ class _AboutMobile extends StatelessWidget {
                               SelectableText('Herbal Medicine for your health',
                                   style: TextStyle(
                                     color: Colors.redAccent,
+                                    fontSize: 20,
                                     fontWeight: FontWeight.bold,
                                   ))
                             ],

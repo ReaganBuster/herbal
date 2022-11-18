@@ -18,6 +18,11 @@ class _ContactDesktop extends StatelessWidget {
               blogColor: Colors.redAccent,
               contactColor: Colors.blueGrey,
             ),
+            Container(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height,
+              child: Lottie.asset(anim),
+            ),
             FooterWidget()
           ],
         ),

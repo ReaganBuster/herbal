@@ -141,7 +141,7 @@ class _BannerDesktop extends StatelessWidget {
                           },
                           child: Text(
                             'Contact',
-                            style: TextStyle(color: aboutColor),
+                            style: TextStyle(color: contactColor),
                           )),
                     )
                   ],
