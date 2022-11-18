@@ -11,7 +11,7 @@ class _HeroMobile extends StatelessWidget {
         children: <Widget>[
           Flow(
             delegate: ParallaxFlowDelegate(
-              scrollable: Scrollable.of(context)!,
+              scrollable: Scrollable.of(context),
               listItemContext: context,
               backgroundImageKey: _backgroundImageKey,
             ),

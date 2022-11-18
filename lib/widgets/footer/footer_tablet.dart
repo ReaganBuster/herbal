@@ -72,12 +72,12 @@ class _FooterTablet extends StatelessWidget {
                                     Icons.facebook,
                                     color: Colors.white,
                                   )),
-                              IconButton(
-                                  onPressed: () {},
-                                  icon: Icon(
-                                    Icons.whatsapp,
-                                    color: Colors.white,
-                                  )),
+                              // IconButton(
+                              //     onPressed: () {},
+                              //     icon: Icon(
+                              //       Icons.whatsapp,
+                              //       color: Colors.white,
+                              //     )),
                               IconButton(
                                   onPressed: () {},
                                   icon: Icon(

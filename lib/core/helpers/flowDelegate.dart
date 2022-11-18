@@ -5,9 +5,9 @@ class ParallaxFlowDelegate extends FlowDelegate {
     required this.scrollable,
     required this.listItemContext,
     required this.backgroundImageKey,
-  }) : super(repaint: scrollable.position);
+  }) : super(repaint: scrollable?.position);
 
-  final ScrollableState scrollable;
+  final ScrollableState? scrollable;
   final BuildContext listItemContext;
   final GlobalKey backgroundImageKey;
 
@@ -20,16 +20,16 @@ class ParallaxFlowDelegate extends FlowDelegate {
 
   @override
   void paintChildren(FlowPaintingContext context) {
-    final scrollableBox = scrollable.context.findRenderObject() as RenderBox;
+    final scrollableBox = scrollable?.context.findRenderObject() as RenderBox;
     final listItemBox = listItemContext.findRenderObject() as RenderBox;
     final listItemOffset = listItemBox.localToGlobal(
         listItemBox.size.centerLeft(Offset.zero),
         ancestor: scrollableBox);
     // Determine the percent position of this list item within the
     // scrollable area.
-    final viewportDimension = scrollable.position.viewportDimension;
+    final viewportDimension = scrollable?.position.viewportDimension;
     final scrollFraction =
-        (listItemOffset.dy / viewportDimension).clamp(0.0, 1.0);
+        (listItemOffset.dy / viewportDimension!).clamp(0.0, 1.0);
 
     // Calculate the vertical alignment of the background
     // based on the scroll percent.
