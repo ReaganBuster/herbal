@@ -99,51 +99,40 @@ class _BannerDesktop extends StatelessWidget {
                     child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Padding(
-                        padding: EdgeInsets.only(left: 8.0, right: 8.0),
-                        child: TextButton(
-                          onPressed: () {
-                            GoRouter.of(context).go('/');
-                          },
-                          child: Text(
-                            'Home',
-                            style: TextStyle(color: homeColor),
-                          ),
-                        )),
-                    Padding(
-                      padding: EdgeInsets.only(left: 8.0, right: 8.0),
-                      child: TextButton(
-                          onPressed: () {
-                            GoRouter.of(context).go('/blog');
-                          },
-                          child: Text(
-                            'Blog',
-                            style: TextStyle(color: blogColor),
-                          )),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 8.0, right: 8.0),
-                      child: TextButton(
-                        onPressed: () {
-                          GoRouter.of(context).go('/about');
-                        },
-                        child: Text(
-                          'About',
-                          style: TextStyle(color: aboutColor),
-                        ),
+                    TextButton(
+                      onPressed: () {
+                        GoRouter.of(context).go('/');
+                      },
+                      child: Text(
+                        'Home',
+                        style: TextStyle(color: homeColor),
                       ),
                     ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 8.0, right: 8.0),
-                      child: TextButton(
-                          onPressed: () {
-                            GoRouter.of(context).go('/contact');
-                          },
-                          child: Text(
-                            'Contact',
-                            style: TextStyle(color: contactColor),
-                          )),
-                    )
+                    TextButton(
+                        onPressed: () {
+                          GoRouter.of(context).go('/blog');
+                        },
+                        child: Text(
+                          'Blog',
+                          style: TextStyle(color: blogColor),
+                        )),
+                    TextButton(
+                      onPressed: () {
+                        GoRouter.of(context).go('/about');
+                      },
+                      child: Text(
+                        'About',
+                        style: TextStyle(color: aboutColor),
+                      ),
+                    ),
+                    TextButton(
+                        onPressed: () {
+                          GoRouter.of(context).go('/contact');
+                        },
+                        child: Text(
+                          'Contact',
+                          style: TextStyle(color: contactColor),
+                        )),
                   ],
                 ))
               ],

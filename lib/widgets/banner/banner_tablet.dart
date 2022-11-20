@@ -19,10 +19,10 @@ class _BannerTablet extends StatelessWidget {
         Container(
           color: Colors.redAccent,
           child: Padding(
-            padding: const EdgeInsets.only(left: 40.0, right: 40),
+            padding: const EdgeInsets.only(left: 15.0, right: 15),
             child: Row(
               children: [
-                Expanded(
+                const Expanded(
                   child: Text(
                     'herbal@gmail.com',
                     style: TextStyle(color: Colors.white),
@@ -34,7 +34,7 @@ class _BannerTablet extends StatelessWidget {
                   children: [
                     IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.facebook,
                           color: Colors.white,
                         )),
@@ -46,13 +46,13 @@ class _BannerTablet extends StatelessWidget {
                     //     )),
                     IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.mail,
                           color: Colors.white,
                         )),
                     IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.tiktok,
                           color: Colors.white,
                         ))
@@ -65,7 +65,7 @@ class _BannerTablet extends StatelessWidget {
         SizedBox(
           child: Padding(
             padding: const EdgeInsets.only(
-                left: 40.0, right: 40, top: 10, bottom: 10),
+                left: 15.0, right: 15, top: 10, bottom: 10),
             child: Row(
               children: [
                 Expanded(
@@ -79,15 +79,15 @@ class _BannerTablet extends StatelessWidget {
                           logo,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 5,
                       ),
-                      Text(
+                      const Text(
                         'Nutracelitical World Limited',
                         style: TextStyle(
                             color: Colors.redAccent,
                             fontWeight: FontWeight.bold,
-                            fontSize: 24),
+                            fontSize: 18),
                       )
                     ],
                   ),
@@ -96,43 +96,32 @@ class _BannerTablet extends StatelessWidget {
                     child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Padding(
-                        padding: EdgeInsets.only(left: 8.0, right: 8.0),
-                        child: TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            'Home',
-                            style: TextStyle(color: Colors.blueGrey),
-                          ),
-                        )),
-                    Padding(
-                      padding: EdgeInsets.only(left: 8.0, right: 8.0),
-                      child: TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            'Blog',
-                            style: TextStyle(color: Colors.redAccent),
-                          )),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 8.0, right: 8.0),
-                      child: TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          'About',
-                          style: TextStyle(color: Colors.redAccent),
-                        ),
+                    TextButton(
+                      onPressed: () {},
+                      child: const Text(
+                        'Home',
+                        style: TextStyle(color: Colors.blueGrey),
                       ),
                     ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 8.0, right: 8.0),
-                      child: TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            'Contact',
-                            style: TextStyle(color: Colors.redAccent),
-                          )),
-                    )
+                    TextButton(
+                        onPressed: () {},
+                        child: const Text(
+                          'Blog',
+                          style: TextStyle(color: Colors.redAccent),
+                        )),
+                    TextButton(
+                      onPressed: () {},
+                      child: const Text(
+                        'About',
+                        style: TextStyle(color: Colors.redAccent),
+                      ),
+                    ),
+                    TextButton(
+                        onPressed: () {},
+                        child: const Text(
+                          'Contact',
+                          style: TextStyle(color: Colors.redAccent),
+                        )),
                   ],
                 ))
               ],

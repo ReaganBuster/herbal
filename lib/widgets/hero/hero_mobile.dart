@@ -26,7 +26,7 @@ class _HeroMobile extends StatelessWidget {
             ],
           ),
           Container(
-            color: Color.fromARGB(79, 0, 0, 0),
+            color: const Color.fromARGB(79, 0, 0, 0),
           ),
           Padding(
             padding: const EdgeInsets.all(15.0),
@@ -36,8 +36,9 @@ class _HeroMobile extends StatelessWidget {
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.8,
                   child: Wrap(
+                    // ignore: prefer_const_literals_to_create_immutables
                     children: [
-                      SelectableText(
+                      const SelectableText(
                         'TRUSTED AND CERTIFIED',
                         style: TextStyle(
                             color: Colors.white,
@@ -47,14 +48,15 @@ class _HeroMobile extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.8,
                   child: Wrap(
+                    // ignore: prefer_const_literals_to_create_immutables
                     children: [
-                      SelectableText(
+                      const SelectableText(
                           'Building a leading and focused herbal medicine company powered by advanced therapy platforms and data science is our over arching strategy.',
                           style: TextStyle(
                             height: 2,
@@ -63,7 +65,7 @@ class _HeroMobile extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 SizedBox(
@@ -75,8 +77,8 @@ class _HeroMobile extends StatelessWidget {
                           GoRouter.of(context).go('/about');
                         },
                         color: Colors.redAccent,
-                        child: Padding(
-                          padding: const EdgeInsets.all(18.0),
+                        child: const Padding(
+                          padding: EdgeInsets.all(18.0),
                           child: Text('About Us',
                               style: TextStyle(
                                 color: Colors.white,

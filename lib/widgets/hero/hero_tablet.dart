@@ -17,25 +17,27 @@ class _HeroTablet extends StatelessWidget {
             ),
             children: [
               Image.asset(
-                bannerImage,
+                asset5,
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height - kToolbarHeight,
                 key: _backgroundImageKey,
                 fit: BoxFit.cover,
               ),
             ],
           ),
           Container(
-            color: Color.fromARGB(79, 0, 0, 0),
+            color: const Color.fromARGB(79, 0, 0, 0),
           ),
           Padding(
-            padding: const EdgeInsets.all(50.0),
+            padding: const EdgeInsets.all(15.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(
-                  width: MediaQuery.of(context).size.width * 0.5,
+                  width: MediaQuery.of(context).size.width * 0.8,
                   child: Wrap(
                     children: [
-                      SelectableText(
+                      const SelectableText(
                         'TRUSTED AND CERTIFIED',
                         style: TextStyle(
                             color: Colors.white,
@@ -45,14 +47,14 @@ class _HeroTablet extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 SizedBox(
-                  width: MediaQuery.of(context).size.width * 0.5,
+                  width: MediaQuery.of(context).size.width * 0.8,
                   child: Wrap(
                     children: [
-                      SelectableText(
+                      const SelectableText(
                           'Building a leading and focused herbal medicine company powered by advanced therapy platforms and data science is our over arching strategy.',
                           style: TextStyle(
                             height: 2,
@@ -61,11 +63,11 @@ class _HeroTablet extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 SizedBox(
-                  width: MediaQuery.of(context).size.width * 0.5,
+                  width: MediaQuery.of(context).size.width * 0.8,
                   child: Row(
                     children: [
                       MaterialButton(
@@ -73,8 +75,8 @@ class _HeroTablet extends StatelessWidget {
                           GoRouter.of(context).go('/about');
                         },
                         color: Colors.redAccent,
-                        child: Padding(
-                          padding: const EdgeInsets.all(18.0),
+                        child: const Padding(
+                          padding: EdgeInsets.all(18.0),
                           child: Text('About Us',
                               style: TextStyle(
                                 color: Colors.white,
