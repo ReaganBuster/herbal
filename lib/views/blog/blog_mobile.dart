@@ -74,21 +74,21 @@ class _BlogMobile extends StatelessWidget {
               title: Text('Blog'),
               textColor: Colors.blueGrey,
               onTap: () {
-                GoRouter.of(context).go('blog');
+                GoRouter.of(context).go('/blog');
               },
             ),
             ListTile(
               title: Text('About'),
               textColor: Colors.redAccent,
               onTap: () {
-                GoRouter.of(context).go('about');
+                GoRouter.of(context).go('/about');
               },
             ),
             ListTile(
               title: Text('Contact'),
               textColor: Colors.redAccent,
               onTap: () {
-                GoRouter.of(context).go('contact');
+                GoRouter.of(context).go('/contact');
               },
             )
           ],

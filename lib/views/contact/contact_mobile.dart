@@ -21,20 +21,20 @@ class _ContactMobile extends StatelessWidget {
             Stack(
               children: [
                 AppBar(
-                  iconTheme: IconThemeData(color: Colors.black),
+                  iconTheme: const IconThemeData(color: Colors.black),
 
-                  leading: SizedBox.shrink(),
+                  leading: const SizedBox.shrink(),
                   centerTitle: false,
                   backgroundColor: Colors.white,
                   // elevation: 0,
                 ),
                 SizedBox(
-                  height: Size.fromHeight(kToolbarHeight).height,
+                  height: const Size.fromHeight(kToolbarHeight).height,
                   child: Padding(
                     padding: const EdgeInsets.only(left: 15),
                     child: Row(
                       children: [
-                        Text(
+                        const Text(
                           'Nutracelitical World Limited',
                           style: TextStyle(
                               color: Colors.redAccent,
@@ -47,7 +47,7 @@ class _ContactMobile extends StatelessWidget {
                 ),
               ],
             ),
-            FooterWidget()
+            const FooterWidget()
           ],
         ),
       ),
@@ -64,31 +64,31 @@ class _ContactMobile extends StatelessWidget {
               ),
             ),
             ListTile(
-              title: Text('Home'),
+              title: const Text('Home'),
               textColor: Colors.redAccent,
               onTap: () {
                 GoRouter.of(context).go('/');
               },
             ),
             ListTile(
-              title: Text('Blog'),
+              title: const Text('Blog'),
               textColor: Colors.redAccent,
               onTap: () {
-                GoRouter.of(context).go('blog');
+                GoRouter.of(context).go('/blog');
               },
             ),
             ListTile(
-              title: Text('About'),
+              title: const Text('About'),
               textColor: Colors.redAccent,
               onTap: () {
-                GoRouter.of(context).go('about');
+                GoRouter.of(context).go('/about');
               },
             ),
             ListTile(
-              title: Text('Contact'),
+              title: const Text('Contact'),
               textColor: Colors.blueGrey,
               onTap: () {
-                GoRouter.of(context).go('contact');
+                GoRouter.of(context).go('/contact');
               },
             )
           ],
