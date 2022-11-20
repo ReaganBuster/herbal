@@ -1,5 +1,7 @@
 library contact_form_widget;
 
+import 'package:herbal/core/constants/constants.dart';
+import 'package:lottie/lottie.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:flutter/material.dart';
 
@@ -11,9 +13,9 @@ class ContactFormWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
-        mobile: _ContactFormMobile(),
-        desktop: _ContactFormDesktop(),
-        tablet: _ContactFormTablet(),
+      mobile: _ContactFormMobile(),
+      desktop: _ContactFormDesktop(),
+      tablet: _ContactFormTablet(),
     );
   }
 }

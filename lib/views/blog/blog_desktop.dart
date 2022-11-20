@@ -20,12 +20,10 @@ class _BlogDesktop extends StatelessWidget {
               blogColor: Colors.blueGrey,
               contactColor: Colors.redAccent,
             ),
-            Expanded(
-              child: SizedBox(
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height,
-                child: Lottie.asset(anim),
-              ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height,
+              child: Lottie.asset(anim),
             ),
             FooterWidget()
           ],

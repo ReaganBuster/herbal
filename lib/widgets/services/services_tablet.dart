@@ -16,7 +16,7 @@ class _ServicesTablet extends StatelessWidget {
           child: Column(
             children: [
               Expanded(
-                  flex: 4,
+                  flex: 5,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [

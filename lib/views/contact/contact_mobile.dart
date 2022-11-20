@@ -47,6 +47,7 @@ class _ContactMobile extends StatelessWidget {
                 ),
               ],
             ),
+            ContactFormWidget(),
             const FooterWidget()
           ],
         ),

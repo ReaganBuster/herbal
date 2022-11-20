@@ -18,6 +18,7 @@ class _ContactTablet extends StatelessWidget {
               blogColor: Colors.redAccent,
               contactColor: Colors.blueGrey,
             ),
+            ContactFormWidget(),
             FooterWidget()
           ],
         ),
